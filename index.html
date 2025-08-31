@@ -9,9 +9,9 @@
         var url = "";
 
         if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-          url = "https://play.google.com/store/apps/details?id=com.iyistudios.Tetrigun";
-        } else if (/android/i.test(userAgent)) {
           url = "https://apps.apple.com/tr/app/tetrigun/id6504509219?l";
+        } else if (/android/i.test(userAgent)) {
+          url = "https://play.google.com/store/apps/details?id=com.iyistudios.Tetrigun";
         } else {
           url = "https://www.iyistudios.com"; // Masaüstü veya tanımsız cihazlar için
         }
@@ -24,3 +24,4 @@
     <p>Tetrigun - Redirecting App Store or Google Play Store</p>
   </body>
 </html>
+
